@@ -1,209 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head>
-	<title>Pixelarizator 1.0a</title>
-	<meta name="author" content="Gabriel Pedro <contato@gpedro.net>">
-</head>
-<body bgcolor="#ccc">
-	<span data-color="#000">PRETO</span>
-	<span data-color="#b88149">MARROM</span>
-	<span data-color="#634721">MARROM-SOMBRA</span>
-	<span data-color="#f3ce48">AMARELO</span>
-	<span data-color="#efc142">AMARELO-SOMBRA</span>
-	<span data-color="rgba(255, 255, 255, 0)">BORRACHA</span>
-	<button>Gerar</button>
+	<head>
+		<title>Pixelarizator 1.1a</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Gabriel Pedro <contato@gpedro.net>">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+	</head>
+	<body>
+		<a href="https://github.com/gpedro/pixelarizator"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+		<div id="wrapper">
+			<div class="palette">
+				<ul>
+				</ul>
+				<span id="more">Add colors ...</span>
+			</div>
+			<div id="container">
+				<div id="new-art">Click here to create new amazing art</div>
+			</div>
+			<form action="http://codepen.io/pen/define" method="POST" id="codepen" target="_blank">
+			  <input type="hidden" name="data" id="raw">
+			  <input type="submit" id="done" value="Create">
+			</form>
+		</div>
 
-	<table border="1" cellspacing="1" cellpadding="15">
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
-		<tr>
-			<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-		</tr>
 
-	</table>
-
-	<br>
-	<textarea cols="100" rows="50"></textarea>
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			var color = "rgba(255, 255, 255, 0)";
-			var colors = {};
-
-			$('span').click(function() {
-				color = $(this).data('color');
-			});
-
-			$('td').click(function() {
-				$(this).css('background-color', color);
-				$(this).attr('data-color', color);
-			});
-
-			$('button').click(function(e) {
-				e.preventDefault();
-
-				var output = "";
-				$('span').each(function(index) {
-					output += "$color"+index+": " + $(this).data('color') + ";\n";
-					colors[$(this).data('color')] = "$color"+index;
-				});
-
-				output += "\nbox-shadow: \n";
-
-				$('tr').each(function(linha) {
-					var countColor = $(this).find('td[data-color*="#"]').length;
-					var count = $(this).find('td').length;
-					if(countColor > 0)
-						output += "\n// Linha " + linha + "\n";
-					
-					$(this).find('td').each(function(coluna) {
-						var currentColor = $(this).data('color');
-						if(currentColor != undefined && currentColor != "rgba(255, 255, 255, 0)") {
-							output += (Math.floor(count/2) - (count-coluna)) + "em " + linha + "em 0 " + colors[currentColor] + ",\n";
-						}
-					});
-				});
-
-				$('textarea').text(output)
-			});
-		});
-	</script>
-</body>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/app.min.js"></script>
+	</body>
 </html>

@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	background: #333;
+
+	font-size:100%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#wrapper {
+	margin: 0 auto;
+	background: #fff;
+	max-width: 960px;
+}
+
+.palette {
+	background: #E3E3E3;
+	padding: 15px;
+}
+
+.palette ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.palette ul li {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #EEE;
+	cursor: pointer;
+}
+
+#more {
+	font-size: .8em;
+}
+
+#container {
+	text-align: center;
+	padding: 15px;
+}
+
+#container table {
+	margin: 0 auto;
+}
+
+#container table, #container table td {
+	border: 1px solid #E3E3E3;
+}
