@@ -16,7 +16,7 @@ $(function() {
 	updateColors();
 
 	$('#more').click(function() {
-		var color = prompt('Hex Color', '');
+		var color = prompt('RGB Color', 'rgb(255, 0, 0)');
 
 		if(color != null) {
 			$('<li data-rgb="' + color + '"></li>').appendTo('.palette ul');
